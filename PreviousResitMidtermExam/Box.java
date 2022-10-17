@@ -24,12 +24,14 @@ public class Box {
         return label;
     }
 
+    public void forward() {
+        this.position = position++;
+    }
 
     public void setPosition(int position) {
         this.position = position;
     }    
 
-    
     public String toString() {
         return "position: " + position + ", label: " + label; 
     }
