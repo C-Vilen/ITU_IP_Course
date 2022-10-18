@@ -4,12 +4,12 @@ Due date: 12-09-2022 12:00
 */
 
 // Class called student
-public class Student {
+public class StudentHandin {
     private String name;
     private int age;
     
     // Constructor of Student class
-    public Student(String name, int age) {
+    public StudentHandin(String name, int age) {
         this.name = name;
         this.age = age;
     }

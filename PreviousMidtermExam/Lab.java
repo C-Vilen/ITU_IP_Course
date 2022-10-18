@@ -9,9 +9,9 @@ import java.util.TreeSet;
 public class Lab {
     private String name;
     private int capacity;
-    private List<Student> students;
+    private List<StudentMidterm> students;
     private Set<String> availableEquipment;
-    private Map<Student, Set<String>> studentEquipment; 
+    private Map<StudentMidterm, Set<String>> studentEquipment; 
 
     public Lab(String name, int capacity) {
         this.name = name;
@@ -21,7 +21,7 @@ public class Lab {
         studentEquipment = new TreeMap<>();
     }
 
-    public boolean register(Student student) {
+    public boolean register(StudentMidterm student) {
         boolean success = false;
         if (students.size() < capacity && !students.contains(student)){
             students.add(student);
@@ -31,7 +31,7 @@ public class Lab {
 
     }
 
-    public boolean remove(Student student) {
+    public boolean remove(StudentMidterm student) {
         if(students.contains(student)) {
             students.remove(student);
             return true;
@@ -49,7 +49,7 @@ public class Lab {
         sc.close();
     }
 
-    public boolean bookEquipment(Student student, String equipmentName) {
+    public boolean bookEquipment(StudentMidterm student, String equipmentName) {
         if(!availableEquipment.contains(equipmentName)) {
             throw new IllegalArgumentException("Equipment not available!");
         }
@@ -63,7 +63,7 @@ public class Lab {
         return true;
     }
 
-    public void returnEquipment(Student student) {
+    public void returnEquipment(StudentMidterm student) {
         if (studentEquipment.containsKey(student)) {
             for (String e : studentEquipment.get(student)) {
                 availableEquipment.add(e);

@@ -3,7 +3,7 @@ This was done by C.Vilen
 Due date: 24-10-2022 12:00
 */
 
-public class Main {
+public class Main7 {
     public static void main(String[] args) {
 
         Pizza p = new Pizza();

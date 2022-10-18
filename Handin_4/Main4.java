@@ -5,7 +5,7 @@ Due date: 26-09-2022 12:00
 
 import java.util.Scanner;
 
-public class Main {
+public class Main4 {
     public static void main(String[] args) {
         // Storing the inputs into two different variables
         Scanner sc = new Scanner(System.in);

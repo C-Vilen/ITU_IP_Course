@@ -1,10 +1,10 @@
-public class Student {
+public class StudentMidterm {
     
     private String name;
     private int age;
 
 
-    public Student(String name) {
+    public StudentMidterm(String name) {
         this.name = name;
     }
 

@@ -6,7 +6,7 @@ This was done by C.Vilen
 Due date: 03-10-2022 12:00
 */
 
-public class Main {
+public class Main5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> SwearWords = new ArrayList<>(Arrays.asList(sc.nextLine().toLowerCase().split(" ")));         // Creates ArrayList for SwearWords

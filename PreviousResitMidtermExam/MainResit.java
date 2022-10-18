@@ -1,4 +1,4 @@
-public class Main {
+public class MainResit {
 
     public static void main(String[] args) throws Exception {
         

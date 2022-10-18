@@ -1,4 +1,4 @@
-public class Main {
+public class Main3 {
     public static void main(String[] args) {
         Tree t2 = new Tree(1);
         t2.growOneYear();

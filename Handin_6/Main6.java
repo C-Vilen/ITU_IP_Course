@@ -5,7 +5,7 @@ This was done by C.Vilen
 Due date: 10-10-2022 12:00
 */
 
-public class Main {
+public class Main6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ShoppingList SL = new ShoppingList();
