@@ -21,7 +21,7 @@ public class Tool {
 
         // Substring method
         String x = "orange,apple,banana";
-        System.out.println("\nsubstring test : " + x.substring(1,9).substring(1, 3));
+        System.out.println("\nsubstring test : " + x.substring(4,11).substring(4, 7));
 
         //Print number string
         int j = 4;
