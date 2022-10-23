@@ -2,21 +2,21 @@ public class Plant {
     private String name;
     private int moistureLevel;
     private int optimalMoistureLevel;
-    private int optimalLightLevel;
+    private int optimalLightingLevel;
 
-    public Plant(String name, int moistureLevel, int optimalMoistureLevel, int optimalLightLevel){
+    public Plant(String name, int moistureLevel, int optimalMoistureLevel, int optimalLightingLevel){
         this.name = name;
         this.moistureLevel = moistureLevel;
         this.optimalMoistureLevel = optimalMoistureLevel;
-        this.optimalLightLevel = optimalLightLevel;
+        this.optimalLightingLevel = optimalLightingLevel;
     }
 
     public String getName(){
         return name;
     }
 
-    public int getOptimalLightLevel(){
-        return optimalLightLevel;
+    public int getOptimalLightingLevel(){
+        return optimalLightingLevel;
     }
 
     public int getRequiredWater(){
@@ -34,7 +34,7 @@ public class Plant {
         result = prime * result + ((name == null) ? 0 : name.hashCode());
         result = prime * result + moistureLevel;
         result = prime * result + optimalMoistureLevel;
-        result = prime * result + optimalLightLevel;
+        result = prime * result + optimalLightingLevel;
         return result;
     }
 
@@ -56,10 +56,12 @@ public class Plant {
             return false;
         if (optimalMoistureLevel != other.optimalMoistureLevel)
             return false;
-        if (optimalLightLevel != other.optimalLightLevel)
+        if (optimalLightingLevel != other.optimalLightingLevel)
             return false;
         return true;
     }
 
-    
+    public void printReport(){
+        System.out.println("plantName: " + name + ", current water: " + moistureLevel + ", required water: "+ optimalMoistureLevel + ", required light: " + optimalLightingLevel);
+    }
 }
