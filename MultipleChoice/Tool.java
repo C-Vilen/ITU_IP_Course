@@ -25,7 +25,7 @@ public class Tool {
 
         //Print number string
         int j = 4;
-        System.out.println("\nNumber string test : " +"1"+j+1+"2");
+        System.out.println(a=0%3);
 
         // Incrementers
         int y = 5;
