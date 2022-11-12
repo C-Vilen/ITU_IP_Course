@@ -30,5 +30,7 @@ public class Tool {
         // Incrementers
         int y = 5;
         System.out.println("\nIncrementer test : " + (y++) + " " + (++y));
+
+        System.out.println("test int : " +(2147483647+1));
     }
 }

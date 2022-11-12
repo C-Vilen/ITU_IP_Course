@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* This is my ninth handin of a ProfanityFilter
+/* This is my ninth handin of a Peptalk generator
 This was done by C.Vilen 
 Due date: 07-11-2022 12:00
 */
