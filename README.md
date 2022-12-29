@@ -15,4 +15,4 @@ This repository includes the following material from the Introductory Programmin
     10. RejseKort
 2. **Previous exam descriptions and handins**
 
-Please note the material is only for educational purposes and inspiration usage only. Plagirism will affect you performance and in worst case expe 
+Please note the material is only for educational purposes and inspiration usage only. Plagirism will affect your own performance and in worst case expelling. 
