@@ -1,3 +1,9 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class Tool {
     public static void main(String[] args) {
         System.out.println("\n");
@@ -32,5 +38,23 @@ public class Tool {
         System.out.println("\nIncrementer test : " + (y++) + " " + (++y));
 
         System.out.println("test int : " +(2147483647+1));
+
+        // Removal of index and specific element
+        List<Integer> list = new ArrayList<>();
+        for(int p=1;p<20;p++){
+            if (p % 3==0){
+                list.add(p); 
+            }
+        }
+        System.out.println("This is a list: " + list);
+        Collection<Integer> col = list;
+        System.out.println("This is a col: " + col);
+        list.remove(3);
+        System.out.println("This is a list: " + list);
+        System.out.println("This is a col: " + col);
+        col.remove(3);
+        System.out.println("This is a list: " + list);
+        System.out.println("This is a col: " + col);
+
     }
 }
