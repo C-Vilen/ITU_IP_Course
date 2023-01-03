@@ -7,7 +7,7 @@ public class MainResit {
         Box clothing = new Box(2, "Clothing");
 
         // New robot
-        Robot bot = new Robot("Simon");
+        Robot bot = new Robot();
 
         // Add boxes to transfer list
         bot.addToTransferList(toys);
@@ -29,7 +29,7 @@ public class MainResit {
         bot.printTransferList();
 
         // Add a box to the priority list with priority 1
-        bot.setLabelPriority("Toys", 1);
+        bot.setLabelPriority(toys, 1);
 
         // Print out the priority of the box in the priority list
         System.out.println(bot.getBoxPriority(toys));

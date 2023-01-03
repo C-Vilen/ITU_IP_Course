@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Tool {
     public static void main(String[] args) {
@@ -30,7 +28,6 @@ public class Tool {
         System.out.println("\nsubstring test : " + x.substring(4,11).substring(4, 7));
 
         //Print number string
-        int j = 4;
         System.out.println(a=0%3);
 
         // Incrementers
