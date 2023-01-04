@@ -7,13 +7,14 @@
  * methods must be public. 
  */
 
- public class Plant {
+public class Plant {
 
     /*
      * Create a Plant class containing a field name of type String and three fields
      * moistureLevel, optimalMoistureLevel, and optimalLightingLevel of type int.
      * The moistureLevel field is the amount of water that the plant currently has
-     * whereas the optimalMoistureLevel represents the amount of water that the plant
+     * whereas the optimalMoistureLevel represents the amount of water that the
+     * plant
      * should typically have.
      */
 
@@ -21,14 +22,13 @@
     private int moistureLevel;
     private int optimalMoistureLevel;
     private int optimalLightingLevel;
-     
+
     /*
      * Create a constructor for Plant that takes the value of all four fields as
      * arguments and initialises the fields of the class.
      */
 
-    public Plant(String name, int moistureLevel, 
-                    int optimalMoistureLevel, int optimalLightingLevel) {
+    public Plant(String name, int moistureLevel, int optimalMoistureLevel, int optimalLightingLevel) {
         this.name = name;
         this.moistureLevel = moistureLevel;
         this.optimalMoistureLevel = optimalMoistureLevel;
@@ -47,15 +47,15 @@
     public int getOptimalLightingLevel() {
         return optimalLightingLevel;
     }
-    
+
     /*
      * Create a method getRequiredWater() that returns how much water a plant must
      * receive in order to reach its optimal moisture level. You may assume that
      * the moistureLevel is smaller than or equal to the optimalMoistureLevel.
      */
-    
+
     public int getRequiredWater() {
-        return optimalMoistureLevel-moistureLevel;
+        return optimalMoistureLevel - moistureLevel;
     }
 
     /*
@@ -66,7 +66,7 @@
     public void water(int amountOfWater) {
         moistureLevel += amountOfWater;
     }
-    
+
     /*
      * Generate the methods equals() and hashCode() for the Plant class (in VSCode
      * right click in source document -> Source Action -> generate hashCode() and
@@ -114,18 +114,19 @@
 
     // Go to SmartGarden
 
-    /* 
+    /*
      * In the Plant class, create a method printReport() that prints the name, the
      * moistureLevel, the optimalMoistureLevel, and the optimalLightingLevel of the
      * plant using the format:
      * 
      * "plantName: <name>, current water: <moistureLevel>,
-     * required water: <optimalMoistureLevel>, required light: <optimalLightingLevel>"
+     * required water: <optimalMoistureLevel>, required light:
+     * <optimalLightingLevel>"
      */
 
     public void printReport() {
-        System.out.println("plantName: " + name + ", current water: " + moistureLevel + 
-        ", required water: " + optimalMoistureLevel + ", required light: " + optimalLightingLevel);
+        System.out.println("plantName: " + name + ", current water: " + moistureLevel +
+                ", required water: " + optimalMoistureLevel + ", required light: " + optimalLightingLevel);
     }
 
     // Go back to SmartGarden

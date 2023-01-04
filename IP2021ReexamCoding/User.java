@@ -22,6 +22,7 @@ public class User {
      */
     private boolean checkIPValidity(String ip) {
         String pattern = "99\\d*\\.\\d+\\.\\d+\\.\\d+";
+        System.out.println("User output of bol: " + ip.matches(pattern));
         return ip.matches(pattern);
     }
       

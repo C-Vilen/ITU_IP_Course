@@ -8,27 +8,20 @@ import java.util.TreeSet;
 
 public class Lab {
 
-    // Fields
+    // The Lab class has two fields name and capacity of types String and int, respectively. 
+    // These two fields are initialised in the constructor of the class with values of the two parameters of the constructor.
     private String name;
     private int capacity;
-
-    // More fields
     private List<StudentMidterm> students;
     private Set<String> availableEquipment;
     private Map<StudentMidterm, Set<String>> studentEquipment;
 
-    // Constructor
     public Lab(String name, int capacity) {
-
         this.name = name;
         this.capacity = capacity;
-
         students = new ArrayList<>();
-        availableEquipment = new TreeSet<>(); // Hash or Tree, either is fine
-
-        studentEquipment = new HashMap<>(); // Use HashMap here, because TreeMap needs Student to implement the
-                                            // Comparable interface
-
+        availableEquipment = new TreeSet<>(); 
+        studentEquipment = new HashMap<>();
     }
 
     // Register a student to a lab
