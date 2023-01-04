@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 public class Tool {
@@ -53,5 +54,20 @@ public class Tool {
         System.out.println("This is a list: " + list);
         System.out.println("This is a col: " + col);
 
+
+        // Iterator
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        numbers.add(12);
+        numbers.add(8);
+        numbers.add(2);
+        numbers.add(23);
+        Iterator<Integer> it = numbers.iterator();
+        while(it.hasNext()) {
+        Integer integer = it.next();
+        if(integer < 10) {
+            it.remove();
+        }
+        }
+        System.out.println(numbers);
     }
 }

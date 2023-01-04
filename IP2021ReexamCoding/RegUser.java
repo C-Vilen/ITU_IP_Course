@@ -1,6 +1,6 @@
 package IP2021ReexamCoding;
 
-    // 3. Implement a class RegUser which is a subclass of User. 
+// 3. Implement a class RegUser which is a subclass of User. 
     // In this class add a field called region of type int, which is initialised in the constructor. 
 public class RegUser extends User{
     private int region;
@@ -35,7 +35,7 @@ public class RegUser extends User{
     @Override
     public void setIP(String ip) {
         if (checkIPValidity(ip)) {
-            setUserIP(ip);
+            super.setIP(ip);
         }
     }
 

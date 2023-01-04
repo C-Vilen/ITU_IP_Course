@@ -12,6 +12,10 @@ public class Forest {
     private List<Tree> trees;
     private Tree tree;
 
+    public Tree getTree() {
+        return tree;
+    }
+
     // Constructor of Forest class
     public Forest(){
         trees = new ArrayList<>();

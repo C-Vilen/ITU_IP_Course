@@ -21,7 +21,7 @@ public class User {
      * ".9999.11.23.1" is not valid (does not start with "99")
      */
     private boolean checkIPValidity(String ip) {
-        String pattern = "99\\d+\\.\\d+\\.\\d+\\.\\d+";
+        String pattern = "99\\d*\\.\\d+\\.\\d+\\.\\d+";
         return ip.matches(pattern);
     }
       
@@ -48,10 +48,6 @@ public class User {
         if (checkIPValidity(ip)) {
             this.userIP = ip;
         }
-    }
-
-    protected void setUserIP(String userIP) {
-        this.userIP = userIP;
     }
 
     public String getUserIP() {

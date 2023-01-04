@@ -5,7 +5,7 @@ public class TwentyTwentyOneReexamMain {
         User user = new User(1);
         RegUser regUser = new RegUser(2, 3);
 
-        user.setIP("99.121.44");
+        user.setIP("99.342.12.01");
         System.out.println("User IP: " + user.getUserIP());
         System.out.println("User level: " + user.getLevel());
 
