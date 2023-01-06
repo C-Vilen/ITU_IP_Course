@@ -73,5 +73,21 @@ public class Tool {
         //Stream foreach
         List<String> names = Arrays.asList("jai", "hemant", "mahesh", "vishal", "vivek");
         names.stream().forEach(System.out::println);
+
+        // Arraylist
+        List<Integer> myList = new ArrayList<>();
+        myList.add(2);
+        myList.add(5);
+        myList.add(10);
+        myList.add(1);
+        myList.add(11);
+        myList.add(1);
+        myList.add(1);
+        myList.add(1);
+        myList.add(1);
+        myList.add(1);
+        myList.add(1);
+        myList.add(1);
+        System.out.println(myList);
     }
 }
