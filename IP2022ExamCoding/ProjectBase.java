@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Set;
 
     /* This is my Introductory Programming exam handin 05/01/2023
-    This was done by Christian Vilen - 0410961911 
+    This was done by Christian Vilen 
     */
 
 public class ProjectBase {

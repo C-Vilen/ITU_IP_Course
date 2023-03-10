@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
     /* This is my Introductory Programming exam handin 05/01/2023
-    This was done by Christian Vilen - 0410961911 
+    This was done by Christian Vilen 
     */
 
 public class ServiceCenter {
@@ -79,27 +79,29 @@ public class ServiceCenter {
     // You may assume that priorities are strictly greater than 0 and return -1 if the queue is empty. 
     // If there are several cars with same priority, returns the smallest index.
     public int findHighestPriority(){
+        int carWithHighestPrioty = 0;
+        int IndexCar = -1;
         if(serviceQueue.size()>0){
-            int carWithHighestPrioty = 0;
             for (Car car : serviceQueue) {
                 if(carsPriority.get(car.getPlate())>carWithHighestPrioty){
                     carWithHighestPrioty = carsPriority.get(car.getPlate());
+                    IndexCar = serviceQueue.indexOf(car);
                 }
             }
-            return carWithHighestPrioty;
-        } else {
-            return -1;
-        }
+        } 
+        return IndexCar;
     }
 
     // 15. In ServiceCenter, implement a method serviceAllWithPriority() 
     // which services the cars (using the serviceCar and/or serviceAll methods) in serviceQueue in order of priority. 
     // The cars with higher priority are serviced first. After servicing each car the car is removed from serviceQueue.
     public void serviceAllWithPriority(){
-        for (Car car : serviceQueue) {
-            if (carsPriority.get(car.getPlate()).equals(findHighestPriority())) {
-                serviceCar(car);
-                serviceQueue.remove(car);
+        while (!serviceQueue.isEmpty()) {
+            for (Car car : serviceQueue) {
+                if (carsPriority.get(car.getPlate()).equals(findHighestPriority())) {
+                    serviceCar(car);
+                    serviceQueue.remove(car);
+                }
             }
         }
     }

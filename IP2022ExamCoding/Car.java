@@ -1,7 +1,7 @@
 public class Car {
 
     /* This is my Introductory Programming exam handin 05/01/2023
-    This was done by Christian Vilen - 0410961911 
+    This was done by Christian Vilen 
     */
 
     // 1. Define the class Car with a field plate of type String representing a car's unique license plate. 
@@ -76,7 +76,7 @@ public class Car {
     // Math.round(float f) takes a floating point number f and rounds f to its nearest integer value.
     public boolean drive(int d){
         boolean output = false;
-        int drivenConsumption = Math.round(consumption)*d;
+        int drivenConsumption = d/Math.round(consumption);
         if(gasLevel > drivenConsumption){
             mileage = mileage + d;
             gasLevel = gasLevel - drivenConsumption;
