@@ -1,3 +1,4 @@
+package MessageAndUser;
 public class User {
     private Message[] inbox;
     private int messageCount;
