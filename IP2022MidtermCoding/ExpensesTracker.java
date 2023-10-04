@@ -20,7 +20,7 @@ public class ExpensesTracker{
         yearlyInvoices.add(invoice);
     }
 
-    // 7
+    // 7 I would make a sum variable and iterate over the list of invoices and add the amount for the given month to the sum if it matches the given month.
     public int monthExpenses(int m) {
         int sum = 0;
         for (Invoice invoice : yearlyInvoices) {
@@ -54,7 +54,7 @@ public class ExpensesTracker{
             Invoice i = it.next();
             if(i.getMonth() == m) it.remove();
         }
-    }   
+    }  
     
     // 11 Use for loop to go over all elements and print the respective lines.
     public void listYearlySavings(){
