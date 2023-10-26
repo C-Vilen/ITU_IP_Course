@@ -17,8 +17,7 @@ public class Todo {
     }
 
     public void addTask(String description, int priority, int minutes){
-        if(priority>4) System.out.println(description + " has invalid priority");
-        if(priority<1) System.out.println(description + " has invalid priority");
+        if(priority>4 || priority<1) System.out.println(description + " has invalid priority");
         if(minutes < 0) System.out.println(description + " has invalid workload");
         Task t = new Task(description, priority, minutes);
         TodoList.add(t);
